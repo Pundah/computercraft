@@ -11,7 +11,7 @@ while true do
 	monitor01.setCursorPos(10,1)
 	time - os.time
 	day = os.day()
-	monitor01.write( textutils.formatTime( os.time(), true) )
+	monitor01.write( textutils.formatTime( os.time(), false) )
 	monitor01.setCursorPos(7,2)
 	monitor01.write("Year:")
 	monitor01.write(tostring(math.floor(year)))
